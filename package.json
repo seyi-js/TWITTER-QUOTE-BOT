@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/seyi-js/TWITTER-QUOTE-BOT#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "node-cron": "^3.0.0",
     "twit": "^2.2.11"
   }

@@ -4,7 +4,9 @@ const {HANDLE_POSTQUOTE_ON_TWITTER} = require('./libs/twitter');
 const NodeCron = require('node-cron');
 let config;
 
-console.log(process.env.NODE_ENV)
+require('dotenv').config()
+
+console.log(process.env.NODE_ENV);
 if(process.env.NODE_ENV !== 'production'){
 config  = require('./libs/config');
 }else{
