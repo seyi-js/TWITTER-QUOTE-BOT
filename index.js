@@ -23,7 +23,7 @@ const Twitter = new Twit(config);
  * 8am and 8pm everyday
  */
 
-NodeCron.schedule('0,0,0 7,19', async()=>{
+NodeCron.schedule('0,0,0 7,19 * * *', async()=>{
     const quote = await HANDLE_GET_QUOTES();
     await HANDLE_POSTQUOTE_ON_TWITTER(Twitter,quote);
 });
