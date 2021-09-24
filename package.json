@@ -1,0 +1,23 @@
+{
+  "name": "twitter_quote_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyi-js/TWITTER-QUOTE-BOT.git"
+  },
+  "author": "SEYIJS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seyi-js/TWITTER-QUOTE-BOT/issues"
+  },
+  "homepage": "https://github.com/seyi-js/TWITTER-QUOTE-BOT#readme",
+  "dependencies": {
+    "node-cron": "^3.0.0",
+    "twit": "^2.2.11"
+  }
+}
