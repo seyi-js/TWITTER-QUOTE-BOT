@@ -4,6 +4,7 @@ const {HANDLE_POSTQUOTE_ON_TWITTER} = require('./libs/twitter');
 const NodeCron = require('node-cron');
 let config;
 
+console.log(process.env.NODE_ENV)
 if(process.env.NODE_ENV !== 'production'){
 config  = require('./libs/config');
 }else{
@@ -24,6 +25,7 @@ const Twitter = new Twit(config);
  */
 
 NodeCron.schedule('0,0,0 7,19 * * *', async()=>{
+    // console.log('Scheduling.')
     const quote = await HANDLE_GET_QUOTES();
     await HANDLE_POSTQUOTE_ON_TWITTER(Twitter,quote);
 });
